@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Linux
         run: |
-          go build -o V2bX-linux
+          GOEXPERIMENT=jsonv2 go build -o V2bX-linux
 
       - name: Upload
         uses: softprops/action-gh-release@v2
