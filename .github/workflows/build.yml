@@ -1,6 +1,8 @@
 name: Build and Release
 
 on:
+  schedule:
+    - cron: "0 0 * * 1"   # 每周一自动执行
   workflow_dispatch:
 
 jobs:
